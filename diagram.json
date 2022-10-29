@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Shaik Abdul Shabbir",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 12.56, "left": -133.52, "attrs": {} },
+    {
+      "type": "wokwi-hx711",
+      "id": "cell1",
+      "top": 92.03,
+      "left": 124.48,
+      "attrs": { "type": "50kg" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "cell1:VCC", "esp:3V3", "red", [ "v23.02", "h-203.78" ] ],
+    [ "cell1:GND", "esp:GND.1", "black", [ "h0" ] ],
+    [ "cell1:DT", "esp:D2", "blue", [ "h0" ] ],
+    [ "cell1:SCK", "esp:D4", "green", [ "h0" ] ]
+  ]
+}
