@@ -3,6 +3,5 @@
 
 Esp32WifiManager
 HX711 Arduino Library
-ThingSpeak
-ArduinoJson
-HttpClient
+Firebase ESP32 Client
+ESP32Servo
